@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LasuStaffConnect</string>
+
+    <string name="lasustaff_string">LASUSTAFF</string>
+    <string name="corner_string">Corner</string>
+    <string name="great_lasu_string">Great LASU</string>
+    <string name="hurrah_string">Hurrah!</string>
+
+    <string name="get_started">Get Started</string>
+    <string name="btn_signin">SIGN IN</string>
+    <string name="btn_signup">SIGN UP</string>
+
+    <string name="hint_password"><font size="50">........</font></string>
+    <string name="hint_email"><font size="15">Adetope.Ola@lasu.edu.ng</font></string>
+    <string name="hint_username"><font size="15">AdetopeOla</font></string>
+    <string name="txt_signin">Sign in</string>
+    <string name="txt_signup">Sign up</string>
+
+    <string name="getting_started">Getting Started</string>
+    <string name="create_acct">Create an account to continue</string>
+    <string name="agree">By creating an account, you agree to our</string>
+    <string name="terms_and_condition">Terms and Conditions</string>
+    <string name="already_have_an_acct">Already have an account?</string>
+</resources>
