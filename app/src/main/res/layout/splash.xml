@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/dm_sans_medium"
         android:text="@string/lasustaff_string"
-        android:textColor="#7A0909"
+        android:textColor="@color/blue_btn_color"
         android:textSize="32sp"
         android:shadowColor="#80000000"
         android:shadowDx="2"

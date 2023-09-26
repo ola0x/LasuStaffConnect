@@ -4,14 +4,43 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/lasu_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_logo_round"
+        android:roundIcon="@mipmap/lasu_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LasuStaffConnect">
-        <activity android:name=".LasuLaw"
+
+        <activity android:name=".ReportAnIncidence"
             android:exported="true"
-            android:theme="@style/Theme.AuthScreen"/>
+            android:theme="@style/Theme.PolicyScreen"/>
+        <activity
+            android:name=".AboutApp"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
+        <activity
+            android:name=".LasuLaw"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
+        <activity
+            android:name=".ExamPolicyActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
+        <activity
+            android:name=".FinancialActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
+        <activity
+            android:name=".PGActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
+        <activity
+            android:name=".COSActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
+        <activity
+            android:name=".LASGActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
         <activity
             android:name=".Splash"
             android:exported="true"
@@ -25,7 +54,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.AuthScreen" />
+            android:theme="@style/Theme.Home" />
+        <activity
+            android:name=".OtherActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
         <activity
             android:name=".AuthSignIn"
             android:exported="true"

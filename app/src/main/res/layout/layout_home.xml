@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/lin_bg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:background="@drawable/oval_drawable">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/lg_lasu_nbg"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/dm_sans_medium"
+        android:text="Lagos State University \n Citadel of Excellence"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lin_bg"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:id="@+id/scroll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_title"
+        android:background="@drawable/bg_pad_white"
+        android:layout_alignParentBottom="@+id/txt_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/framelasu"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_law"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_lasu_law"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/framecos"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_cos"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_cos"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/framefp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_fp"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_fp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/framepg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_pg"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_pg"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/frameexam"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_exam"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_exam"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/framelasg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_lasg"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_lasg"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/framefaculty"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_faculty"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_faculty"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/framecouncil"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_council"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_council"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/framenigeria"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_flag"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_constitution"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/frameprocurement"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_act"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_act"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/frameinfo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_info"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_info"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/frameict"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/hm_ict"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="@string/txt_ict"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_copyright1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:text="Copyright @"
+                    android:textColor="@color/grey"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/txt_copyright2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans_bold"
+                    android:text="DICT LASU"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

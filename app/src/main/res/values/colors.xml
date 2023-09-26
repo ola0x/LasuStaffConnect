@@ -9,6 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#8F92A1</color>
 
+    <color name="welcome_btn_color">#CD1A1A</color>
+    <color name="blue_btn_color">#0077FF</color>
+    <color name="gold">#ffec00</color>
+
     <color name="_bg__splash_ek2_color">#E5E5E5</color>
     <color name="rectangle_91_color">#FFFFFF</color>
     <color name="___time_color">#2A2B2A</color>
@@ -16,5 +20,6 @@
     <color name="lasustaff_connect_color">#790808</color>
 
     <color name="welcome_color">#EBCCCC</color>
+    <color name="__welcome_color">#CED0C5</color>
     <color name="signin_placeholder_color">#171717</color>
 </resources>

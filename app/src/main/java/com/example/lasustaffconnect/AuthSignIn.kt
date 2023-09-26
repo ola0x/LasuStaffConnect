@@ -15,6 +15,7 @@ class AuthSignIn : AppCompatActivity() {
         var btn_new_activity = findViewById(R.id.button_signin) as Button
 
         var btn_next = findViewById(R.id.textView8) as TextView
+        var btn_next1 = findViewById(R.id.textView7) as TextView
 
         btn_new_activity.setOnClickListener {
 //            val intent = Intent(this@AuthSignIn, MainActivity::class.java)
@@ -23,6 +24,10 @@ class AuthSignIn : AppCompatActivity() {
         }
 
         btn_next.setOnClickListener {
+            val intent = Intent(this@AuthSignIn, AuthSignUp::class.java)
+            startActivity(intent);
+        }
+        btn_next1.setOnClickListener {
             val intent = Intent(this@AuthSignIn, AuthSignUp::class.java)
             startActivity(intent);
         }

@@ -1,18 +1,20 @@
 <resources>
-    <string name="app_name">LasuStaffConnect</string>
+    <string name="app_name">LASU STAFF CORNER</string>
 
-    <string name="lasustaff_string">LASUSTAFF</string>
-    <string name="corner_string">Corner</string>
-    <string name="great_lasu_string">Great LASU</string>
-    <string name="hurrah_string">Hurrah!</string>
+    <string name="lasustaff_string">LASU STAFF</string>
+    <string name="corner_string">CORNER</string>
+    <string name="great_lasu_string">Professor I.I.Olatunji-Bello,mni,NPOM</string>
+    <string name="hurrah_string">welcomes you!</string>
 
     <string name="get_started">Get Started</string>
     <string name="btn_signin">SIGN IN</string>
     <string name="btn_signup">SIGN UP</string>
 
+    <string name="lasu_law">LASU LAW</string>
+
     <string name="hint_password"><font size="50">........</font></string>
-    <string name="hint_email"><font size="15">Adetope.Ola@lasu.edu.ng</font></string>
-    <string name="hint_username"><font size="15">AdetopeOla</font></string>
+    <string name="hint_email"><font size="15">oluwatoyin.enikuomehin@lasu.edu.ng</font></string>
+    <string name="hint_username"><font size="15">OluwatoyinEni</font></string>
     <string name="txt_signin">Sign in</string>
     <string name="txt_signup">Sign up</string>
 
@@ -21,4 +23,17 @@
     <string name="agree">By creating an account, you agree to our</string>
     <string name="terms_and_condition">Terms and Conditions</string>
     <string name="already_have_an_acct">Already have an account?</string>
+
+    <string name="txt_lasu_law">LASU LAW</string>
+    <string name="txt_cos">Condition of Service</string>
+    <string name="txt_fp">Financial Policy</string>
+    <string name="txt_pg">Promotion Guildlines</string>
+    <string name="txt_exam">Exam Policy</string>
+    <string name="txt_lasg">LASG Public Service</string>
+    <string name="txt_faculty">Faculty and Departments</string>
+    <string name="txt_council">Governing Council and Management Staff</string>
+    <string name="txt_constitution">Nigerian Constitution</string>
+    <string name="txt_act">Procurement Act</string>
+    <string name="txt_info">LASU INFO</string>
+    <string name="txt_ict">ICT Releases</string>
 </resources>

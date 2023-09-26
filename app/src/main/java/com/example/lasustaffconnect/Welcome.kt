@@ -12,9 +12,14 @@ class Welcome : AppCompatActivity() {
         setContentView(R.layout.welcome)
 
         var btn_new_activity = findViewById(R.id.button_get) as Button
+        var btn_abt = findViewById(R.id.btn_about) as Button
 
         btn_new_activity.setOnClickListener {
             val intent = Intent(this@Welcome, AuthSignIn::class.java)
+            startActivity(intent);
+        }
+        btn_abt.setOnClickListener {
+            val intent = Intent(this@Welcome, AboutApp::class.java)
             startActivity(intent);
         }
     }
