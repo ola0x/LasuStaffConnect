@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".LasuLaw">
+    tools:context=".ConstitutionAcrivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -23,15 +23,17 @@
         app:layout_constraintVertical_bias="0.413" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dm_sans_bold"
-        android:text="LASU LAW"
+        android:text="@string/txt_constitution"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:layout_marginStart="26dp"
         android:layout_marginEnd="26dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -40,35 +42,39 @@
         app:layout_constraintVertical_bias="0.061" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_download"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/dm_sans_medium"
+        android:text="Download this document"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_title"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <TextView
+        android:id="@+id/txt_overview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dm_sans_medium"
         android:text="Overview"
         android:textColor="@color/black"
         android:textSize="15sp"
-        android:layout_marginStart="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintVertical_bias="0.014" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/dm_sans_medium"
-        android:text="View LASU LAW"
-        android:textColor="@color/grey"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@id/textView2"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintLeft_toRightOf="@+id/textView2"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@id/txt_download"
+        app:layout_constraintVertical_bias="0.041" />
 
     <View
         android:id="@+id/view1"
@@ -76,31 +82,15 @@
         android:layout_height="1dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/darker_gray"
-        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/txt_overview"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/dm_sans_medium"
-        android:text="About this LAW"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:layout_marginStart="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view1"
-        app:layout_constraintVertical_bias="0.039" />
-
-    <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txt_policy"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="The Faculty of Law, Lagos State University is the flagship of the University. The Faculty is equipped with adequate manpower and resourceful personnel in terms of academic and non-academic staff. With a well equipped library and internet facilities, the Faculty produces first class graduates of law who compete favourably anywhere they find themselves whether in practice, academia or industry. It is therefore my pleasure to welcome you to join the Faculty to pursue your academic programme with us in the exciting atmosphere of Lagos."
+        android:text="The Constitution of Nigeria is the written supreme law of the Federal Republic of Nigeria. Nigeria has had many constitutions. Its current form was enacted on 29 May 1999 and inaugurated the Fourth Nigerian Republic. \n It establishes the legislative, executive, and judicial branches of government and details their duties and the separation of powers between the branches and federal and state governments. \n Nigeria's legislative powers are vested in a National Assembly with two chambers: a Senate and a House of Representatives."
         android:textColor="@color/black"
         android:textSize="15sp"
         android:maxLines="15"
@@ -113,8 +103,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView4"
+        app:layout_constraintTop_toBottomOf="@id/view1"
         app:layout_constraintVertical_bias="0.039" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

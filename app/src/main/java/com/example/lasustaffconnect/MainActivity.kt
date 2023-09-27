@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         var btn_framecos = findViewById(R.id.framecos) as TextView
         var btn_framelasg = findViewById(R.id.framelasg) as TextView
         var btn_frameexam = findViewById(R.id.frameexam) as TextView
+        var btn_frameprocurement = findViewById(R.id.frameprocurement) as TextView
+        var btn_framenigeria = findViewById(R.id.framenigeria) as TextView
 
         btn_info.setOnClickListener {
             val intent = Intent(this@MainActivity, OtherActivity::class.java)
@@ -47,6 +49,14 @@ class MainActivity : AppCompatActivity() {
         }
         btn_frameexam.setOnClickListener {
             val intent = Intent(this@MainActivity, ExamPolicyActivity::class.java)
+            startActivity(intent);
+        }
+        btn_frameprocurement.setOnClickListener {
+            val intent = Intent(this@MainActivity, PActActivity::class.java)
+            startActivity(intent);
+        }
+        btn_framenigeria.setOnClickListener {
+            val intent = Intent(this@MainActivity, ConstitutionAcrivity::class.java)
             startActivity(intent);
         }
     }

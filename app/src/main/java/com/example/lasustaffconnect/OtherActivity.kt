@@ -14,6 +14,7 @@ class OtherActivity : AppCompatActivity() {
 
         var btn_lems = findViewById(R.id.frameview4) as TextView
         var btn_report = findViewById(R.id.frameview3) as TextView
+        var btn_bulletin = findViewById(R.id.frameview1) as TextView
 
         btn_lems.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://leave.lasu.edu.ng/"));
@@ -22,6 +23,11 @@ class OtherActivity : AppCompatActivity() {
 
         btn_report.setOnClickListener {
             val intent = Intent(this@OtherActivity, ReportAnIncidence::class.java)
+            startActivity(intent);
+        }
+
+        btn_bulletin.setOnClickListener {
+            val intent = Intent(this@OtherActivity, BulletinActivity::class.java)
             startActivity(intent);
         }
     }

@@ -9,7 +9,7 @@ import android.view.View
 import android.widget.FrameLayout
 import android.widget.TextView
 
-class PGActivity : AppCompatActivity() {
+class PActActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_policy)
@@ -21,10 +21,10 @@ class PGActivity : AppCompatActivity() {
         var txt_policy = findViewById(R.id.txt_policy) as TextView
 
 
-        txt_title.text = "Promotion Guildlines"
+        txt_title.text = "Procurement Act"
 
-        txt_overview.text = "Academic"
-        txt_view_policy.text = "Non-Academic"
+        txt_overview.text = "Overview"
+        txt_view_policy.text = "View Acts"
 
         txt_view_policy.setOnClickListener {
             txt_view_policy.setTypeface(null, Typeface.BOLD);

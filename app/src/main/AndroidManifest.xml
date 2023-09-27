@@ -9,10 +9,21 @@
         android:roundIcon="@mipmap/lasu_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LasuStaffConnect">
-
-        <activity android:name=".ReportAnIncidence"
+        <activity android:name=".ConstitutionAcrivity"
             android:exported="true"
             android:theme="@style/Theme.PolicyScreen"/>
+        <activity
+            android:name=".PActActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
+        <activity
+            android:name=".BulletinActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
+        <activity
+            android:name=".ReportAnIncidence"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
         <activity
             android:name=".AboutApp"
             android:exported="true"
