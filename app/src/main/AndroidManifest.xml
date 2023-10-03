@@ -25,6 +25,10 @@
             android:exported="true"
             android:theme="@style/Theme.PolicyScreen" />
         <activity
+            android:name=".Helpdesk"
+            android:exported="true"
+            android:theme="@style/Theme.PolicyScreen" />
+        <activity
             android:name=".AboutApp"
             android:exported="true"
             android:theme="@style/Theme.PolicyScreen" />
@@ -67,7 +71,7 @@
             android:exported="true"
             android:theme="@style/Theme.Home" />
         <activity
-            android:name=".OtherActivity"
+            android:name=".InfoActivity"
             android:exported="true"
             android:theme="@style/Theme.PolicyScreen" />
         <activity

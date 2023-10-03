@@ -3,9 +3,6 @@ package com.example.lasustaffconnect
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.FrameLayout
-import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -24,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         var btn_framenigeria = findViewById(R.id.framenigeria) as TextView
 
         btn_info.setOnClickListener {
-            val intent = Intent(this@MainActivity, OtherActivity::class.java)
+            val intent = Intent(this@MainActivity, InfoActivity::class.java)
             startActivity(intent);
         }
         btn_new_law.setOnClickListener {

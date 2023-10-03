@@ -3,7 +3,7 @@
 
     <string name="lasustaff_string">LASU STAFF</string>
     <string name="corner_string">CORNER</string>
-    <string name="great_lasu_string">Professor I.I.Olatunji-Bello,mni,NPOM</string>
+    <string name="great_lasu_string">Professor I.I.Olatunji-Bello mni, fnli, NPOM</string>
     <string name="hurrah_string">welcomes you!</string>
 
     <string name="get_started">Get Started</string>
@@ -36,4 +36,19 @@
     <string name="txt_act">Procurement Act</string>
     <string name="txt_info">LASU INFO</string>
     <string name="txt_ict">ICT Releases</string>
+
+    <string name="welcome_message">
+        <![CDATA[<p>It is my distinct honor and privilege to welcome you to the LASU STAFF CORNER, the official Staff APP of our esteemed University. As the Vice Chancellor, I am delighted to extend my warmest greetings to all those who have embarked upon this journey of knowledge, discovery, and endless possibilities with us.</p>
+        <br><p>This APP serves as a virtual gateway to our vibrant academic community, offering a window into the heart and soul of our institution. Here, you will find information and resources that embody our policies and operational principles as approved by Law and as entrenched in our commitment to excellence in education, research, and community engagement.</p>
+        <br><p>As you navigate through these digital pages, you will uncover a wealth of knowledge that embodies the foundation of our University, the State, and the Country at large. From the LAW establishing the University to the Condition of Service for both Senior and Junior Staff members, we have covered a range of resources that give us a better footage as staff members of the University.</p>
+        <br><p>In this CORNER, you will also be able to report issues around you even as you get regular updates from the University.</p>
+        <br><p>This solution further encapsulates the essence of our university\'s pursuit of intellectual growth, openness, and innovation.</p>
+        <br><p>As we embark on this digital journey together, I encourage each and every one of you to actively engage with the LASU CORNER, get updates, and contribute to its growth.</p>
+        <br><p>Welcome to our university\'s digital world, where possibilities know no bounds.</p>
+        <br><p>We are LASU, we are great.</p>
+        <br><b>Prof. Ibiyemi I.I. Olatunji-Bello mni, fnli, NPOM</b>
+        <p>Vice Chancellor</p><br><br><br><br>.
+        ]]>
+    </string>
+
 </resources>
