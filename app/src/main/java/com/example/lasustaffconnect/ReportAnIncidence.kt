@@ -15,5 +15,9 @@ class ReportAnIncidence : AppCompatActivity() {
         txt_abt_app.text = "Contact VC Office"
 //        txt_email.text = ""
 
+        txt_abt_app.setOnClickListener{
+            onBackPressed()
+        }
+
     }
 }

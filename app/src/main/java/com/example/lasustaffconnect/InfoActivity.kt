@@ -17,6 +17,7 @@ class InfoActivity : AppCompatActivity() {
         var fp_ecv = findViewById(R.id.fp_ecv) as TextView
         var fp_bulletin = findViewById(R.id.fp_bulletin) as TextView
         var fp_helpdesk = findViewById(R.id.fp_helpdesk) as TextView
+        var fp_dict = findViewById(R.id.fp_dict) as TextView
 
         fp_lems.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://leave.lasu.edu.ng/"));
@@ -42,6 +43,10 @@ class InfoActivity : AppCompatActivity() {
         }
         fp_helpdesk.setOnClickListener {
             val intent = Intent(this@InfoActivity, Helpdesk::class.java)
+            startActivity(intent);
+        }
+        fp_dict.setOnClickListener {
+            val intent = Intent(this@InfoActivity, DictTeam::class.java)
             startActivity(intent);
         }
     }

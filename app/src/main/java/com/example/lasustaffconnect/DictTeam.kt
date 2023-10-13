@@ -3,9 +3,9 @@ package com.example.lasustaffconnect
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class BulletinActivity : AppCompatActivity() {
+class DictTeam : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_bulletin)
+        setContentView(R.layout.activity_dict_team)
     }
 }

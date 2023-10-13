@@ -1,5 +1,8 @@
 package com.example.lasustaffconnect
 
+import android.annotation.SuppressLint
+import android.graphics.text.LineBreaker
+import android.graphics.text.LineBreaker.JUSTIFICATION_MODE_INTER_WORD
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,13 +17,16 @@ class AboutApp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.about_app)
 
-        var txt_welcome = findViewById(R.id.textView5) as TextView
+        var txt_welcome = findViewById(R.id.txt_welcome) as TextView
+        var txt_abt_app = findViewById<TextView>(R.id.txt_abt_app)
 
-        val str = resources.getString(R.string.welcome_message)
-
+        val str = resources.getString(R.string.vc_welcome_address)
         txt_welcome.text = Html.fromHtml(str, Html.FROM_HTML_MODE_COMPACT)
 
-        txt_welcome.movementMethod = LinkMovementMethod.getInstance()
+        txt_abt_app.setOnClickListener{
+            onBackPressed()
+        }
+
 
     }
 }

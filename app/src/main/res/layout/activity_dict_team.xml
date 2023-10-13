@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DictTeam">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_team_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Our Team"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/ic_back_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.061" />
+
+        <ImageView
+            android:id="@+id/img_dir"
+            android:layout_width="230dp"
+            android:layout_height="250dp"
+            android:background="@mipmap/hm_ecv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_team_app"
+            app:layout_constraintVertical_bias="0.044"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/txt_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="108dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="Prof Toyin"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_dir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/img_dir" />
+
+        <TextView
+            android:id="@+id/txt_dir_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="108dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="Director DICT"
+            android:textColor="@color/purple_500"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/txt_dir"
+            app:layout_constraintStart_toStartOf="@id/txt_dir"/>
+
+        <ImageView
+            android:id="@+id/img_dict_male"
+            android:layout_width="230dp"
+            android:layout_height="250dp"
+            android:src="@mipmap/hm_ecv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_dir"
+            app:layout_constraintVertical_bias="0.044"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/txt_dict_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="108dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="Members DICT"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_dict_male"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/img_dict_male" />
+
+        <TextView
+            android:id="@+id/txt_dict_male_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="108dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="Male"
+            android:textColor="@color/purple_500"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/txt_dict_male"
+            app:layout_constraintStart_toStartOf="@id/txt_dict_male"/>
+
+        <ImageView
+            android:id="@+id/img_dict_fem"
+            android:layout_width="230dp"
+            android:layout_height="250dp"
+            android:src="@mipmap/hm_ecv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_dict_male"
+            app:layout_constraintVertical_bias="0.044"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/txt_dict_fem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="108dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="Members DICT"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_dict_fem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/img_dict_fem" />
+
+        <TextView
+            android:id="@+id/txt_dict_fem_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="108dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="FeMale"
+            android:textColor="@color/purple_500"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/txt_dict_fem"
+            app:layout_constraintStart_toStartOf="@id/txt_dict_fem"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

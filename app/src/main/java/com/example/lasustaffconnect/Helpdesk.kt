@@ -1,5 +1,6 @@
 package com.example.lasustaffconnect
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -13,7 +14,11 @@ class Helpdesk : AppCompatActivity() {
         var txt_email = findViewById(R.id.txt_email) as TextView
 
         txt_abt_app.text = "Contact Director, DICT"
-//        txt_email.text = ""
+        txt_email.text = "staffsupport@lasu.edu.ng"
+
+        txt_abt_app.setOnClickListener {
+            onBackPressed()
+        }
 
     }
 }
