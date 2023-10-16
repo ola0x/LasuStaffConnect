@@ -1,17 +1,13 @@
 package com.example.lasustaffconnect
 
 import android.content.Intent
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Html
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.TextView
-import androidx.annotation.RequiresApi
 
 class COSActivity : AppCompatActivity() {
-    @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_policy)
@@ -25,24 +21,21 @@ class COSActivity : AppCompatActivity() {
 
         txt_title.text = "Condition of Service (COS)"
 
-        val str = resources.getString(R.string.abt_text_cos)
-        txt_policy.text = Html.fromHtml(str, Html.FROM_HTML_MODE_COMPACT)
+        txt_view_policy.text = "Section 1"
+        txt_view_policy.setOnClickListener {
+            txt_abt_policy.visibility = View.GONE
+            txt_policy.text = "The Flexible Work Arrangements policy aims to support a diverse and inclusive workplace by providing employees with opportunities to achieve a healthy work-life balance. This policy outlines the guidelines and procedures for requesting and implementing flexible work arrangements, such as telecommuting, flexible hours, or job sharing, while ensuring that the organization's operational needs and productivity goals are met. It is our commitment to fostering a work environment that values employee well-being and recognizes the importance of accommodating"
 
-//        txt_view_policy.text = "Section 1"
-//        txt_view_policy.setOnClickListener {
-//            txt_abt_policy.visibility = View.GONE
-//            txt_policy.text = "The Flexible Work Arrangements policy aims to support a diverse and inclusive workplace by providing employees with opportunities to achieve a healthy work-life balance. This policy outlines the guidelines and procedures for requesting and implementing flexible work arrangements, such as telecommuting, flexible hours, or job sharing, while ensuring that the organization's operational needs and productivity goals are met. It is our commitment to fostering a work environment that values employee well-being and recognizes the importance of accommodating"
-//
-//        }
-//
-//        txt_overview.setOnClickListener {
-//            txt_abt_policy.visibility = View.VISIBLE
-//            txt_policy.text = "The Flexible Work Arrangements policy aims to support a diverse and inclusive workplace by providing employees with opportunities to achieve a healthy work-life balance. This policy outlines the guidelines and procedures for requesting and implementing flexible work arrangements, such as telecommuting, flexible hours, or job sharing, while ensuring that the organization's operational needs and productivity goals are met. It is our commitment to fostering a work environment that values employee well-being and recognizes the importance of accommodating"
-//
-//        }
-//
-//        txt_abt_policy.text = "About this Policy"
-//        txt_policy.text = "The Flexible Work Arrangements policy aims to support a diverse and inclusive workplace by providing employees with opportunities to achieve a healthy work-life balance. This policy outlines the guidelines and procedures for requesting and implementing flexible work arrangements, such as telecommuting, flexible hours, or job sharing, while ensuring that the organization's operational needs and productivity goals are met. It is our commitment to fostering a work environment that values employee well-being and recognizes the importance of accommodating"
+        }
+
+        txt_overview.setOnClickListener {
+            txt_abt_policy.visibility = View.VISIBLE
+            txt_policy.text = "The Flexible Work Arrangements policy aims to support a diverse and inclusive workplace by providing employees with opportunities to achieve a healthy work-life balance. This policy outlines the guidelines and procedures for requesting and implementing flexible work arrangements, such as telecommuting, flexible hours, or job sharing, while ensuring that the organization's operational needs and productivity goals are met. It is our commitment to fostering a work environment that values employee well-being and recognizes the importance of accommodating"
+
+        }
+
+        txt_abt_policy.text = "About this Policy"
+        txt_policy.text = "The Flexible Work Arrangements policy aims to support a diverse and inclusive workplace by providing employees with opportunities to achieve a healthy work-life balance. This policy outlines the guidelines and procedures for requesting and implementing flexible work arrangements, such as telecommuting, flexible hours, or job sharing, while ensuring that the organization's operational needs and productivity goals are met. It is our commitment to fostering a work environment that values employee well-being and recognizes the importance of accommodating"
 
     }
 

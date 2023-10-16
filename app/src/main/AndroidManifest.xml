@@ -9,17 +9,10 @@
         android:roundIcon="@mipmap/lasu_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LasuStaffConnect">
-        <activity android:name=".ManagementStaffActivity"
+
+        <activity android:name=".GoverningCouncilActivity"
             android:exported="true"
             android:theme="@style/Theme.PolicyScreen"/>
-        <activity
-            android:name=".GCHomepage"
-            android:exported="true"
-            android:theme="@style/Theme.PolicyScreen" />
-        <activity
-            android:name=".GoverningCouncilActivity"
-            android:exported="true"
-            android:theme="@style/Theme.PolicyScreen" />
         <activity
             android:name=".DictTeam"
             android:exported="true"

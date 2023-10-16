@@ -178,7 +178,7 @@
         android:id="@+id/fp_dict"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:drawableTop="@drawable/hm_dict"
+        android:drawableTop="@drawable/hm_dict_team"
         android:drawablePadding="8dp"
         android:fontFamily="@font/dm_sans_medium"
         android:text="DICT \n Support Team"
