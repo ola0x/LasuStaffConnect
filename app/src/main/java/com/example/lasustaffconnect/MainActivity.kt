@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent);
         }
         btn_framecouncil.setOnClickListener {
-            val intent = Intent(this@MainActivity, GoverningCouncilActivity::class.java)
+            val intent = Intent(this@MainActivity, GCHomepage::class.java)
             startActivity(intent);
         }
     }

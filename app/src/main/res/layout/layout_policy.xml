@@ -122,7 +122,8 @@
             android:textSize="15sp"
             android:justificationMode="inter_word"
             android:ellipsize="none"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:paddingBottom="36dp"/>
 
     </androidx.core.widget.NestedScrollView>
 
