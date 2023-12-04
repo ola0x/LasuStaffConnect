@@ -5,27 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".GoverningCouncilActivity">
+    tools:context=".activity.GoverningCouncilActivity">
 
     <TextView
         android:id="@+id/txt_abt_app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_back_arrow"
+        android:drawablePadding="20dp"
         android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center_horizontal"
         android:text="Governing Council"
         android:textColor="@color/black"
         android:textSize="24sp"
-        android:gravity="center_horizontal"
-        android:layout_marginStart="26dp"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="26dp"
-        android:drawablePadding="20dp"
-        android:drawableStart="@drawable/ic_back_arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <View
         android:id="@+id/view1"
@@ -50,578 +50,968 @@
         app:layout_constraintTop_toBottomOf="@id/view1"
         app:layout_constraintVertical_bias="0.039">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/consti"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.034"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view1"
-            app:layout_constraintVertical_bias="0.0" >
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/img_sir_david"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:background="@mipmap/hm_ecv"
-                android:gravity="center_horizontal" 
-                />
-
-            <TextView
-                android:id="@+id/txt_sir_david"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/rel_david"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="44dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Sir David O.A. SUNMONI, FCA, KJW"
-                android:textColor="@color/black"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_sir_david"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_sir_david" />
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:id="@+id/txt_david_title"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_david"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_david"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_david"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Sir. David O. A. SUNMONI, FCA, KJW"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_david"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Pro Chancellor AND Chairman"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_david"
+                    android:layout_below="@id/txt_david"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_vc"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans"
-                android:text="Pro Chancellor and Chairman"
-                android:textColor="@color/grey"
-                android:textSize="12sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_sir_david"
-                app:layout_constraintStart_toStartOf="@id/txt_sir_david"/>
+                android:layout_marginBottom="20dp">
 
-            <ImageView
-                android:id="@+id/img_ogala"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:background="@mipmap/hm_ecv"
-                android:gravity="center_horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.034"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_sir_david"
-                app:layout_constraintVertical_bias="0.0" />
+                <ImageView
+                    android:id="@+id/img_vc"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_vc"
+                    android:layout_alignParentStart="true"/>
 
-            <TextView
-                android:id="@+id/txt_ogala"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/txt_vc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/txt_gc_vc_name"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_vc"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="@string/txt_vc_title"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_vc"
+                    android:layout_below="@id/txt_vc"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_vcaca"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="40dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_ogala"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_ogala" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:id="@+id/txt_ogala_title"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_vcaca"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_dvc_aca"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_vcaca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n  Prof. Olufunsho A. OMOBITAN"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_vcaca"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="@string/txt_dvc_aca_title"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_vcaca"
+                    android:layout_below="@id/txt_vcaca"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_vcadm"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_ogala"
-                app:layout_constraintStart_toStartOf="@id/txt_ogala"/>
+                android:layout_marginBottom="20dp">
 
-            <ImageView
-                android:id="@+id/img_tolani"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:background="@mipmap/hm_ecv"
-                android:gravity="center_horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.034"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_ogala"
-                app:layout_constraintVertical_bias="0.008" />
+                <ImageView
+                    android:id="@+id/img_vcadm"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_dvc_adm"
+                    android:layout_alignParentStart="true"/>
 
-            <TextView
-                android:id="@+id/txt_tolani"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/txt_vcadm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n  Prof. Adenike O. BOYO"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_vcadm"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="@string/txt_dvc_adm_title"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_vcadm"
+                    android:layout_below="@id/txt_vcadm"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_registrar"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="48dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_tolani"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_tolani" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:id="@+id/txt_tolani_title"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_registrar"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_registrar"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_registrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n  Mr. Emmanuel A. FANU"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_registrar"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Registrar and Secretary to Council"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_registrar"
+                    android:layout_below="@id/txt_registrar"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_tolani"
-                app:layout_constraintStart_toStartOf="@id/txt_tolani"/>
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GOVERNMENT APPOINTEES"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/img_yetunde"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
-                android:background="@mipmap/hm_ecv"
-                android:gravity="center_horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.034"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_tolani"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/txt_yetunde"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/rel_amuwo"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="48dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_yetunde"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_yetunde" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:id="@+id/txt_yetunde_title"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@id/img_amuwo"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_adeniyi"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_amuwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Prof. Amuwo Shaffdeen"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_amuwo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_amuwo"
+                    android:layout_below="@id/txt_amuwo"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_tolani"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_yetunde"
-                app:layout_constraintStart_toStartOf="@id/txt_yetunde"/>
+                android:layout_marginBottom="20dp"
+                android:visibility="gone">
 
-            <ImageView
-                android:id="@+id/img_foluke"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@mipmap/hm_ecv"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_yetunde"
-                app:layout_constraintVertical_bias="0.044"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"/>
+                <ImageView
+                    android:id="@+id/img_tolani"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_tolani"
+                    android:layout_alignParentStart="true"/>
+                <TextView
+                    android:id="@+id/txt_tolani"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Mr. Tolani SULE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_tolani"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_tolani"
+                    android:layout_below="@id/txt_tolani"
+                    android:layout_alignParentEnd="true"/>
 
-            <TextView
-                android:id="@+id/txt_foluke"
-                android:layout_width="wrap_content"
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_ifeanyi"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="48dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_foluke"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_foluke" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:id="@+id/txt_foluke_title"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_ifeanyi"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_ifeanyi"
+                    android:layout_alignParentStart="true"/>
+                <TextView
+                    android:id="@+id/txt_ifeanyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Dr. Ifeanyi Chukwuma ODII"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_ifeanyi"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_ifeanyi"
+                    android:layout_below="@id/txt_ifeanyi"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_karl"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_foluke"
-                app:layout_constraintStart_toStartOf="@id/txt_foluke"/>
+                android:layout_marginBottom="20dp">
 
-            <ImageView
-                android:id="@+id/img_danoye"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@mipmap/hm_ecv"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_foluke"
-                app:layout_constraintVertical_bias="0.044"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"/>
+                <ImageView
+                    android:id="@+id/img_karl"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_karl"
+                    android:layout_alignParentStart="true"/>
 
-            <TextView
-                android:id="@+id/txt_danoye"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/txt_karl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Mr. Karl TORIOLA"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_karl"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_karl"
+                    android:layout_below="@id/txt_karl"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_adekunle"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="48dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_danoye"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_danoye" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:id="@+id/txt_danoye_title"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_adekunle"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_adekunle"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_adekunle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Mr. Adekunle SONAME CFR"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_adekunle"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_adekunle"
+                    android:layout_below="@id/txt_adekunle"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_foluke"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_danoye"
-                app:layout_constraintStart_toStartOf="@id/txt_danoye"/>
+                android:layout_marginBottom="20dp">
 
-            <ImageView
-                android:id="@+id/img_moronke"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@mipmap/hm_ecv"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_danoye"
-                app:layout_constraintVertical_bias="0.044"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"/>
+                <ImageView
+                    android:id="@+id/img_foluke"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_foluke"
+                    android:layout_alignParentStart="true"/>
 
-            <TextView
-                android:id="@+id/txt_moronke"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/txt_foluke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Dr. Mrs. Foluke ABDULRAZAQ OON"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_foluke"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_foluke"
+                    android:layout_below="@id/txt_foluke"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_moronke"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="48dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_moronke"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_moronke" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:id="@+id/txt_moronke_title"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_moronke"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_moronke"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_moronke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Mrs. Moronke WILLIAMS"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_moronke"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_moronke"
+                    android:layout_below="@id/txt_moronke"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_adebayo"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_moronke"
-                app:layout_constraintStart_toStartOf="@id/txt_moronke"/>
+                android:layout_marginBottom="20dp">
 
-            <ImageView
-                android:id="@+id/img_adebayo"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@mipmap/hm_ecv"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_moronke"
-                app:layout_constraintVertical_bias="0.044"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"/>
+                <ImageView
+                    android:id="@+id/img_adebayo"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_adebayo"
+                    android:layout_alignParentStart="true"/>
 
-            <TextView
-                android:id="@+id/txt_adebayo"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/txt_adebayo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Barr. Adebayo AKINSANYA"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_adebayo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_adebayo"
+                    android:layout_below="@id/txt_adebayo"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_adenike"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="48dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_adebayo"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_adebayo" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:id="@+id/txt_adebayo_title"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_adenike"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_adenike"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_adenike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Mrs. Adenike YOMI-FASEUN"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_adenike"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_adenike"
+                    android:layout_below="@id/txt_adenike"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_moji"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_adebayo"
-                app:layout_constraintStart_toStartOf="@id/txt_adebayo"/>
+                android:layout_marginBottom="20dp">
 
-            <ImageView
-                android:id="@+id/img_adeniyi"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@mipmap/hm_ecv"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_adebayo_title"
-                app:layout_constraintVertical_bias="0.044"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"/>
+                <ImageView
+                    android:id="@+id/img_moji"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_moji"
+                    android:layout_alignParentStart="true"/>
 
-            <TextView
-                android:id="@+id/txt_adeniyi"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/txt_moji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Mrs. Moji Tolagbe TAIWO"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_moji"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_moji"
+                    android:layout_below="@id/txt_moji"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_hakeem"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="48dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_adeniyi"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_adeniyi" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:id="@+id/txt_adeniyi_title"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_hakeem"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_hakeem"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_hakeem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Dr. Hakeem ADETUGBOBO"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_hakeem"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_hakeem"
+                    android:layout_below="@id/txt_hakeem"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_ogala"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_adeniyi"
-                app:layout_constraintStart_toStartOf="@id/txt_adeniyi"/>
+                android:layout_marginBottom="20dp">
 
-            <ImageView
-                android:id="@+id/img_ifeanyi"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@mipmap/hm_ecv"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_adeniyi"
-                app:layout_constraintVertical_bias="0.044"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"/>
+                <ImageView
+                    android:id="@+id/img_ogala"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_ogala"
+                    android:layout_alignParentStart="true"/>
 
-            <TextView
-                android:id="@+id/txt_ifeanyi"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/txt_ogala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Barr. Babatunde OGALA  SAN"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_ogala"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_ogala"
+                    android:layout_below="@id/txt_ogala"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_kemi"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="48dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_ifeanyi"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_ifeanyi" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:id="@+id/txt_ifeanyi_title"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_kemi"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_kemi"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_kemi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Mrs. Oluwakemi Y. KALESANWO"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_kemi"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_kemi"
+                    android:layout_below="@id/txt_kemi"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_ifeanyi"
-                app:layout_constraintStart_toStartOf="@id/txt_ifeanyi"/>
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ALUMNI REPRESENTATIVE"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/img_kemi"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@mipmap/hm_ecv"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_ifeanyi"
-                app:layout_constraintVertical_bias="0.044"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"/>
-
-            <TextView
-                android:id="@+id/txt_kemi"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/rel_faruk"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="48dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_kemi"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_kemi" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_faruk"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_faruk"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_faruk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n  Mr. Faruk DANMOLE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_faruk"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_faruk"
+                    android:layout_below="@id/txt_faruk"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_kemi"
-                app:layout_constraintStart_toStartOf="@id/txt_kemi"/>
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SENATE REPRESENTATIVES"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/img_dara"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@mipmap/hm_ecv"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_kemi"
-                app:layout_constraintVertical_bias="0.044"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"/>
-
-            <TextView
-                android:id="@+id/txt_dara"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/rel_dara"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="48dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_dara"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_dara" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_dara"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_dara"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_dara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n  Prof. Mobolaji A. OLUDARA"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_dara"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_dara"
+                    android:layout_below="@id/txt_dara"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_danoye"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_dara"
-                app:layout_constraintStart_toStartOf="@id/txt_dara"/>
+                android:layout_marginBottom="20dp">
 
-            <ImageView
-                android:id="@+id/img_yakubu"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@mipmap/hm_ecv"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_dara"
-                app:layout_constraintVertical_bias="0.044"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"/>
+                <ImageView
+                    android:id="@+id/img_danoye"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_danoye"
+                    android:layout_alignParentStart="true"/>
 
-            <TextView
-                android:id="@+id/txt_yakubu"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/txt_danoye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n Prof. Danoye O. LAGUDA"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_danoye"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_danoye"
+                    android:layout_below="@id/txt_danoye"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_toyin"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="48dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Prof"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/img_dara"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@id/img_dara" />
+                android:layout_marginBottom="20dp">
 
-            <TextView
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_toyin"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_toyin"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_toyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n  Prof. Oluwatoyin ENIKUOMEHIN"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_toyin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_toyin"
+                    android:layout_below="@id/txt_toyin"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_yetunde"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="108dp"
-                android:fontFamily="@font/dm_sans_medium"
-                android:text="Member"
-                android:textColor="@color/grey"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txt_yakubu"
-                app:layout_constraintStart_toStartOf="@id/txt_yakubu"/>
+                android:layout_marginBottom="20dp">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/img_yetunde"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_yetunde"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_yetunde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n  Prof. Yetunde KUYINU"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_yetunde"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_yetunde"
+                    android:layout_below="@id/txt_yetunde"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONGREGATION REPRESENTATIVES"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_albert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/img_albert"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_albert"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_albert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n  Mr. Albert Y. AGOSU"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_albert"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_albert"
+                    android:layout_below="@id/txt_albert"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_jubril"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp">
+
+                <ImageView
+                    android:id="@+id/img_jubril"
+                    android:layout_width="@dimen/gc_image_size"
+                    android:layout_height="@dimen/gc_image_size"
+                    android:src="@mipmap/gc_jubril"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_jubril"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="\n  Mr. Yakubu A. JUBRIL"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/img_jubril"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="  Member"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img_jubril"
+                    android:layout_below="@id/txt_jubril"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
 

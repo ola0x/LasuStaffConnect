@@ -72,7 +72,7 @@
         android:layout_height="50dp"
         android:background="@drawable/grey_trim"
         android:fontFamily="@font/dm_sans_medium"
-        android:hint="@string/hint_email"
+        android:hint="LSC@lasu.edu.ng"
         android:textColor="@color/signin_placeholder_color"
         android:textColorHint="@color/grey"
         android:textSize="15sp"

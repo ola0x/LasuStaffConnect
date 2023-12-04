@@ -1,9 +1,23 @@
 package com.example.lasustaffconnect
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.lasustaffconnect.activity.COSActivity
+import com.example.lasustaffconnect.activity.COSHomePageActivity
+import com.example.lasustaffconnect.activity.ConstitutionAcrivity
+import com.example.lasustaffconnect.activity.ExamPolicyActivity
+import com.example.lasustaffconnect.activity.FinancialActivity
+import com.example.lasustaffconnect.activity.GCHomepageActivity
+import com.example.lasustaffconnect.activity.GoverningCouncilActivity
+import com.example.lasustaffconnect.activity.ICTReleasesActivity
+import com.example.lasustaffconnect.activity.InfoActivity
+import com.example.lasustaffconnect.activity.LASGActivity
+import com.example.lasustaffconnect.activity.LasuLawActivity
+import com.example.lasustaffconnect.activity.PActActivity
+import com.example.lasustaffconnect.activity.PGActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,13 +35,14 @@ class MainActivity : AppCompatActivity() {
         var btn_framenigeria = findViewById(R.id.framenigeria) as TextView
         var btn_frameict = findViewById(R.id.frameict) as TextView
         var btn_framecouncil = findViewById(R.id.framecouncil) as TextView
+        var btn_framefaculty = findViewById(R.id.framefaculty) as TextView
 
         btn_info.setOnClickListener {
             val intent = Intent(this@MainActivity, InfoActivity::class.java)
             startActivity(intent);
         }
         btn_new_law.setOnClickListener {
-            val intent = Intent(this@MainActivity, LasuLaw::class.java)
+            val intent = Intent(this@MainActivity, LasuLawActivity::class.java)
             startActivity(intent);
         }
         btn_fp.setOnClickListener {
@@ -43,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent);
         }
         btn_framecos.setOnClickListener {
-            val intent = Intent(this@MainActivity, COSActivity::class.java)
+            val intent = Intent(this@MainActivity, COSHomePageActivity::class.java)
             startActivity(intent);
         }
         btn_frameexam.setOnClickListener {
@@ -59,11 +74,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent);
         }
         btn_frameict.setOnClickListener {
-        val intent = Intent(this@MainActivity, ICTReleasesActivity::class.java)
+            val intent = Intent(this@MainActivity, ICTReleasesActivity::class.java)
             startActivity(intent);
         }
         btn_framecouncil.setOnClickListener {
-            val intent = Intent(this@MainActivity, GoverningCouncilActivity::class.java)
+            val intent = Intent(this@MainActivity, GCHomepageActivity::class.java)
+            startActivity(intent);
+        }
+        btn_framefaculty.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://lasu.edu.ng/home/faculties/"));
             startActivity(intent);
         }
     }

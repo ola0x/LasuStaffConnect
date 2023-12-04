@@ -12,7 +12,7 @@ class ReportAnIncidence : AppCompatActivity() {
         var txt_abt_app = findViewById(R.id.txt_abt_app) as TextView
         var txt_email = findViewById(R.id.txt_email) as TextView
 
-        txt_abt_app.text = "Contact VC Office"
+        txt_abt_app.text = "Contact VC's Office"
 //        txt_email.text = ""
 
         txt_abt_app.setOnClickListener{

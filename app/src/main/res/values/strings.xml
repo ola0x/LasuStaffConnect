@@ -1,9 +1,10 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">LASU STAFF CORNER</string>
 
     <string name="lasustaff_string">LASU STAFF</string>
     <string name="corner_string">CORNER</string>
-    <string name="great_lasu_string">Professor I.I.Olatunji-Bello mni, fnli, NPOM</string>
+    <string name="great_lasu_string">Professor I.I.Olatunji-Bello mni, NPOM, fnli, FSPSP</string>
     <string name="hurrah_string">welcomes you!</string>
 
     <string name="get_started">Get Started</string>
@@ -26,16 +27,18 @@
 
     <string name="txt_lasu_law">LASU LAW</string>
     <string name="txt_cos">Condition of Service</string>
-    <string name="txt_fp">Financial Policy</string>
+    <string name="txt_scheme">Scheme of Work</string>
+    <string name="txt_fp">Financial Regulation</string>
     <string name="txt_pg">Promotion Guildlines</string>
     <string name="txt_exam">Exam Policy</string>
-    <string name="txt_lasg">LASG Public Service</string>
+    <string name="txt_lasg">LASG Public Service Rule</string>
     <string name="txt_faculty">Faculty and Departments</string>
     <string name="txt_council">Governing Council and Management Staff</string>
     <string name="txt_constitution">Nigerian Constitution</string>
-    <string name="txt_act">Procurement Act</string>
+    <string name="txt_pact">Procurement Act</string>
     <string name="txt_info">LASU INFO</string>
     <string name="txt_ict">ICT Releases</string>
+    <string name="txt_useful_links">Useful Links</string>
 
     <string name="vc_welcome_address">
         <![CDATA[<p>It is my distinct honor and privilege to welcome you to the LASU STAFF CORNER, the official Staff APP of our esteemed University. As the Vice Chancellor, I am delighted to extend my warmest greetings to all those who have embarked upon this journey of knowledge, discovery, and endless possibilities with us.</p>
@@ -45,10 +48,64 @@
         <br><p>This solution further encapsulates the essence of our university\'s pursuit of intellectual growth, openness, and innovation.</p>
         <br><p>As we embark on this digital journey together, I encourage each and every one of you to actively engage with the LASU CORNER, get updates, and contribute to its growth.</p>
         <br><p>Welcome to our university\'s digital world, where possibilities know no bounds.</p>
-        <br><p>We are LASU, we are great.</p>
-        <br><b>Prof. Ibiyemi I. Olatunji-Bello mni, fnli, NPOM</b>
+        <br><p>We are LASU, We are great.</p>
+        <br><b>Prof. Ibiyemi I. Olatunji-Bello mni, fnli, NPOM, FSPSP</b>
         <p>Vice Chancellor</p><br><br><br><br>.
         ]]>
     </string>
+
+    <string name="abt_text_constitution_of_nigeria">
+        <![CDATA[<p><b>1999 CONSTITUTION OF THE FEDERAL REPUBLIC OF NIGERIA</b></p>
+        <br><p>In Nigeria, the 1999 constitution supersedes all other laws, including State laws passed by the House of Assembly and Acts of the National Assembly. It is the supreme law in the nation through which all other laws derive theirs power, legitimacy and must submit to. The law is binding on all citizens of the nation and serves as a legal compass for institutional and individual behaviour within the country.</p>
+        <br><p>The 1999 constitution makes provision for economic policy, political objectives, social objectives, foreign policy objectives, educational objectives, environmental objectives, guidelines for Nigerian culture, obligation of the Mass media, National ethics, rights and duties of citizen. It is expected that the contents of the constitution will instill some measure of accountability and discipline in the conduct of political leaders.</p>
+        ]]>
+    </string>
+
+    <string name="abt_text_procurement_act">
+        <![CDATA[<p><b>PROCUREMENT ACT OF THE FEDERAL REPUBLIC OF NIGERIA</b></p>
+        <br><p>This Act contains rules and regulations that guide the procurement and disposal of assets under the three arms of the Federal Republic of Nigeria,
+        i.e. The Federal Government, State Government and Local Government.</p>
+        ]]>
+    </string>
+
+    <string name="abt_text_lasg_public_service">
+        <![CDATA[<p><b>LAGOS STATE GOVERNMENT PUBLIC SERVICE RULES</b></p>
+        <body>
+            <br><p>This document is the product of intensive review of the rules and regulations guiding career management in the State Public Service. Without any iota of doubt, several reform programmes have been undertaken in the Lagos State Public Service since the advent of civilian rule in May 1999 and it is only logical that they be adequately accommodated in the new Public Service Rules.</p>
+            <br><p>Lagos State Public Servants are therefore enjoined to fully acquaint themselves with these Rules, which should be applied alongside corresponding Executive Orders, Instruments, Gazettes, Circulars, and Notices as we are duty bound to operate in accordance with all Laws and Procedures guiding Public Service Management, Public Finance Management as well as Policies and Strategies in the State to ensure due diligence through transparency, accountability, and probity in the conduct of Government business.</p>
+            <br><p>Accordingly, our attention is being drawn to the following guidelines, which should be taken into account while going through these Rules:</p>
+            <ol type="i">
+                <br><li><b>Method of Numbering</b><br>Each Rule has been accorded a six-digit number. The first two indicate the Chapter; the next two, the Section; and the last two, the Rule Number. (e.g. 130201 is the First Rule in the second Section of the thirteenth Chapter or Rule One, Section Two of Chapter Thirteen.)</li>
+                <br><li><b>Arrangement of Chapters, Sections, and Rules</b><br>There are eighteen Chapters arranged as listed in the Table of Contents</li>
+                <br><li><b>Amendments</b><br>Amendments to these Rules shall be effected through Circulars, which will be issued from time to time.</li>
+                <br><li><b>Review of the Public Service Rules</b><br>This treatise shall be reviewed periodically to update the provisions of the Rules.</li>
+            </ol>
+            <br><p>This Public Service Rules should be widely circulated and made available to all categories of Public Servants in Lagos State as they are required to familiarize themselves with its contents.</p>
+            <br><p>(Sgd)<br><b>Shuaheeb Olabode Agoro (Mr)</b><br>Head of Service,<br>Office of the Head of Service,<br>The Secretariat,<br>Alausa, Ikeja.</p><br><br><br><br><br><br><br><br><br>
+        </body>
+        ]]>
+    </string>
+
+    <string name="abt_text_exam_policy">
+        <![CDATA[<p><b>SENATE AD-HOC COMMITTEE ON POLICY AND GUIDELINES FOR CONDUCT OF EXAMINATION</b></p>
+        <br><p>As a globally renowned Institution, a lot of individuals and organizations depend on the knowledge and competence impacted on our students for growth and sustainability. The University therefore has a duty to maintain academic standards by ensuring the integrity of our research, teaching and examination processes.</p>
+        <br><p>This policy which is intended to guide the conduct of examinations is published by the University Senate for the benefit of all staff and students. It codifies the standards of behavior, regulations, procedures, sanctions and appeal processes relating to the conduct of examinations in the University. It is intended to prevent, limit and correct actions that may impede, obstruct or damage our academic integrity and acceptable norms. </p>
+        <br><p>As expected, staff and students should understand that it is their responsibility to become familiar with the contents of this book. This publication is only to guide staff and students with an understanding of their rights, responsibilities, obligations and the operating procedure for examinations in the Lagos State University. Any breach of this policy will be taken seriously and handled in line with extant regulations. </p>
+        <br><p>Unarguably, this policy is the University’s commitment to excellence in teaching and learning. Also, it is one of the range of policies and documents which reinforce our culture, vision, mission and is within the University’s quality assurance framework. </p>
+        <br><p>It is therefore my firm conviction that the Lagos State University is on an upward trajectory of excellence in teaching, research and service to humanity.</p>
+        <br><p><b>We are LASU, We are Great!</b></p><br><br><br><br>
+        ]]>
+    </string>
+
+    <string name="abt_text_cos">
+        <![CDATA[<p><b>LASU CONDITIONS OF SERVICE</b></p>
+        <br><p>The Lagos State University Conditions of Service contains rules, rights, requirements, and policies that govern the relationship between the University and its staff.</p>
+        <br><p>It is a document that guides the conduct of staff and prescribes the responsibilities of the staff to the University and vice versa.</p>
+        ]]>
+    </string>
+    <string name="txt_gc_vc_name">\n Prof. Ibiyemi I. Olatunji-Bello mni, NPOM, fnli, FSPSP</string>
+    <string name="txt_vc_title">Vice Chancellor</string>
+    <string name="txt_dvc_aca_title">Deputy VC (Academics)</string>
+    <string name="txt_dvc_adm_title">Deputy VC (Administration)</string>
 
 </resources>
